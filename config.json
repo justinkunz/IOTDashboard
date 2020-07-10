@@ -1,0 +1,10 @@
+{
+  "weather": {
+    "lat": "33.1032",
+    "lon": "-96.6706"
+  },
+  "network": {
+    "alertThreshold": 100,
+    "maxFrequencyMinutes": 120
+  }
+}
