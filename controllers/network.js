@@ -30,7 +30,6 @@ const getNetworkSpeed = async (req, res) => {
         ? moment().diff(moment(lastAlert), "m") > maxFrequencyMinutes
         : true;
 
-      console.log({ lastAlert, sendAlert });
       if (sendAlert) {
         console.log("Sending slow network alert");
         await sms.sendMessage(`SLOW NETWORK ALERT:\n\nNetwork Speed: ${Math.round(speed)}Mbps`);

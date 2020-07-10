@@ -9,7 +9,7 @@ export default function Clock(props) {
   useEffect(() => {
     // Refresh time every 1s
     setInterval(() => setTime(getTime()), 1000);
-  }, 1000);
+  }, [setTime]);
 
   const styles = {
     time: {
