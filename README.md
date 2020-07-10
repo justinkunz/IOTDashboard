@@ -2,6 +2,8 @@
 
 Simple React/Node IOT Dashboard I made for my house. Displays **Current News**, **Weather**, **Time** & **Wifi Speed**. Made to run on a Raspberry Pi. This dashboard also sends SMS alerts whenever Wifi Strength falls under a specified threshold _(future enhancements might tweet at Spectrum, because fuck that)_
 
+![App Screenshot](./docs/app.png)
+
 ## Set Up
 
 1. Clone this repo and install dependancies by running `npm install`
