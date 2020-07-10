@@ -36,7 +36,7 @@ const getNetworkSpeed = async (req, res) => {
         await sms.sendMessage(`SLOW NETWORK ALERT:\n\nNetwork Speed: ${Math.round(speed)}Mbps`);
         appendFileSync("./network.log", `\n${moment().toISOString()} - ALERT SENT`);
       }
-    
+    }
 
     appendFileSync("./network.log", `\n${moment().format("MM/DD/YYYY hh:mm:ss")} - ${speed} Mbps`);
     res.json({ speed });
